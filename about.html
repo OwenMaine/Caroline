@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Carolina Catfish Yachts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+    <header class="header">
+         <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Carolina Catfish Yachts Logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="boats.html" class="nav-link">Boat Models</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: url('images/11.jpg');">
+            <div class="container">
+                <h1 data-aos="fade-up">Our Story</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Rooted in Passion, Built with Pride</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container grid grid-2-cols align-center gap-lg">
+                <div data-aos="fade-right">
+                    <h2 class="section-title">From Riverbanks to Revolution</h2>
+                    <p>Carolina Catfish Yachts was born from a simple idea shared between friends on the banks of the Dan River: what if we built a boat that was truly designed for us? For the dedicated catfish and river angler who needs more than just a vessel, but a reliable partner on the water. Founded in Reidsville, North Carolina, we've grown from a small workshop into a leading manufacturer, but our core mission remains unchanged: to build the best damn fishing boats on the planet.</p>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="images/6.jpg" alt="Vintage photo of the founders fishing" class="img-fluid rounded-img">
+                </div>
+            </div>
+        </section>
+
+        <section class="section bg-light">
+            <div class="container text-center">
+                <h2 class="section-title" data-aos="fade-up">Meet the Craftsmen</h2>
+                <div class="grid grid-3-cols gap-md" data-aos="fade-up" data-aos-delay="200">
+                    <div class="team-card">
+                        <img src="images/7.jpg" alt="John Doe">
+                        <h4>John Doe</h4>
+                        <p class="text-muted">Lead Designer</p>
+                    </div>
+                     <div class="team-card">
+                        <img src="images/8.jpg" alt="Jane Smith">
+                        <h4>Jane Smith</h4>
+                        <p class="text-muted">Head of Fabrication</p>
+                    </div>
+                     <div class="team-card">
+                        <img src="images/9.jpg" alt="Mike Williams">
+                        <h4>Mike Williams</h4>
+                        <p class="text-muted">Master Welder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section">
+             <div class="container text-center">
+                <h2 class="section-title" data-aos="fade-up">American Made, Angler Approved</h2>
+                <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Every weld, every wire, every detail is handled with pride in our North Carolina facility.</p>
+                <div class="grid grid-2-cols gap-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="images/10.jpg" alt="Boat hull being constructed" class="img-fluid rounded-img">
+                    <img src="images/11.jpg" alt="Detail shot of boat console wiring" class="img-fluid rounded-img">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer bg-dark">
+         <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="Carolina Catfish Yachts Logo" class="footer-logo">
+                    <p>Designing and manufacturing high-performance boats for catfish and river fishing.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="boats.html">Models</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 638 Tamco Rd, Reidsville, NC 27320</p>
+                    <p><i class="fas fa-phone"></i> (336) 342-1141</p>
+                    <p><i class="fas fa-envelope"></i> info@carolinacatyachts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Carolina Catfish Yachts, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Copy the content of the header and footer from index.html here for simplicity in this example
+        // In a real project, you would use a template engine.
+        document.querySelector('header').innerHTML = document.querySelector('header').innerHTML || ``;
+        document.querySelector('footer').innerHTML = document.querySelector('footer').innerHTML || ``;
+    </script>
+</body>
+</html>

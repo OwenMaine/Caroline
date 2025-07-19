@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Our Models | Carolina Catfish Yachts</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <header class="header">
+         <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="images/logo.png" alt="Carolina Catfish Yachts Logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                <li class="nav-item"><a href="boats.html" class="nav-link">Boat Models</a></li>
+                <li class="nav-item"><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header" style="background-image: url('images/3.jpg');">
+            <div class="container">
+                <h1 data-aos="fade-up">Our Fleet</h1>
+                <p data-aos="fade-up" data-aos-delay="100">Engineered for Every Angler and Every Current</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="tabs" data-aos="fade-up">
+                    <button class="tab-link active" onclick="filterBoats('all')">All Models</button>
+                    <button class="tab-link" onclick="filterBoats('river')">River Boats</button>
+                    <button class="tab-link" onclick="filterBoats('catfish')">Catfish Boats</button>
+                    <button class="tab-link" onclick="filterBoats('custom')">Custom Builds</button>
+                </div>
+
+                <div class="grid grid-2-cols gap-lg boat-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="boat-card catfish river">
+                        <img src="images/12.jpg" alt="The River Phantom 24'">
+                        <div class="boat-card-content">
+                            <h3>The River Phantom 24'</h3>
+                            <p>Our flagship model, built for the most demanding catfish tournaments and challenging waters.</p>
+                            <ul class="boat-specs">
+                                <li><i class="fas fa-ruler-combined"></i> Length: 24'</li>
+                                <li><i class="fas fa-ship"></i> Beam: 96"</li>
+                                <li><i class="fas fa-horse-head"></i> Max HP: 250</li>
+                            </ul>
+                            <div class="boat-card-actions">
+                                
+                                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="boat-card river">
+                         <img src="images/15.jpg" alt="The Current Carver 21'">
+                        <div class="boat-card-content">
+                            <h3>The Current Carver 21'</h3>
+                            <p>A nimble yet powerful boat for navigating shallow rivers and tight spots with confidence.</p>
+                            <ul class="boat-specs">
+                                <li><i class="fas fa-ruler-combined"></i> Length: 21'</li>
+                                <li><i class="fas fa-ship"></i> Beam: 92"</li>
+                                <li><i class="fas fa-horse-head"></i> Max HP: 200</li>
+                            </ul>
+                            <div class="boat-card-actions">
+                                
+                                <a href="contact.html" class="btn btn-primary">Request Quote</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    </div>
+            </div>
+        </section>
+        
+        <section class="section bg-dark text-light">
+            <div class="container text-center" data-aos="fade-up">
+                <h2 class="section-title">Warranty & Customization</h2>
+                <p class="section-subtitle">Every boat is backed by our lifetime hull warranty and built in the USA. Want something unique? We specialize in custom builds to match your exact fishing style.</p>
+                <a href="assets/brochure.pdf" download class="btn btn-primary"><i class="fas fa-download"></i> Download Brochure</a>
+            </div>
+        </section>
+    </main>
+    
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal1')">&times;</span>
+            <h2>River Phantom 24' - Full Specifications</h2>
+            <p>Detailed specs go here...</p>
+        </div>
+    </div>
+    <div id="modal2" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="closeModal('modal2')">&times;</span>
+            <h2>Current Carver 21' - Full Specifications</h2>
+            <p>Detailed specs go here...</p>
+        </div>
+    </div>
+
+
+    <footer class="footer bg-dark">
+         <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <img src="images/logo.png" alt="Carolina Catfish Yachts Logo" class="footer-logo">
+                    <p>Designing and manufacturing high-performance boats for catfish and river fishing.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="boats.html">Models</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact Us</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 638 Tamco Rd, Reidsville, NC 27320</p>
+                    <p><i class="fas fa-phone"></i> (336) 342-1141</p>
+                    <p><i class="fas fa-envelope"></i> info@carolinacatyachts.com</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Carolina Catfish Yachts, LLC. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        // Copy header/footer content
+    </script>
+</body>
+</html>
